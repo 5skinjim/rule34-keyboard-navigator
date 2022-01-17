@@ -1,0 +1,22 @@
+{
+    "name": "Rule 34 Keyboard Navigator",
+    "description": "Left and right handed keyboard navigation for rule34.xxx",
+    "version": "1.0.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+          "matches": ["https://rule34.xxx/index.php?page=post&s=list*"],
+          "js": ["content.js"]
+        }
+    ],
+    "icons": {
+        "128": "icon.png"
+    },
+    "action": {
+        "default_icon": {
+          "128": "icon.png"
+        },
+        "default_title": "Navigation Controls",
+        "default_popup": "popup.html"
+    }
+}
